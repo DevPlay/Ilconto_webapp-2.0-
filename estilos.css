@@ -1,0 +1,170 @@
+
+	.encabezado{
+    	position: relative;
+    	background-color: #00a65e;	   	
+    }
+h3{
+    	position: relative;
+    	text-align: center;
+		color: white
+		background color: red;
+		bottom: 10px;
+		font-family: verdana, arial;
+	}
+    
+
+/*#Le damos estilo al fondo de la web*/
+
+	body{
+		position: relative;
+		background-color: #f6e3c2;
+		background-image: url('img/home1.jpg');
+		background-attachment: fixed;			
+	}	
+
+
+
+/*#Le damos estilo a la lista*/
+
+	h2{ 
+		position: absolute;
+		color: black;
+		font-weight: bold;
+		font-family: verdana, arial;
+		letter-spacing: 8px;
+		font-variant-position: 15px;
+		text-shadow: 1px 1px 1px #b2b2b2;
+		top:60px;
+    	right: 0px;   				
+	}
+
+
+
+   .pared {
+    	position: relative;
+    	width: 100%
+    	   	
+    }
+
+    /*# Creo el boton para actualizar los llamados*/
+
+    #presionar{
+    	position: relative;
+    	top:-330px;
+    	left: 20px;	
+      	width: 70px;
+		height: 40px;
+		background:  url("img/timbre.png") no-repeat;
+		background-size: 70px 40px;
+		background-image: 70px 40px;
+	}
+
+    .fecha{
+    	position: absolute;
+    	top: 70px;
+    	left: 88% ;
+      	color: white; 
+      	background-color: black;
+    	font-family: verdana, arial;
+    	font-size: 20px;
+ 		text-align: center;
+    
+    	background-image:url('img/reloj2.png');
+    	background-position:center;
+		background-repeat: no-repeat;:   
+    	width: 100px;
+    	height: auto;
+    	display: block;
+    	border-radius: 8px;
+    	box-shadow: 5px 5px 0px #7f7f7f;*/
+    	padding: 10px;
+    	border: 5px solid #ff9c44;
+
+     }	 
+    
+/*#Le damos estilo a la lista*/
+
+	.box {
+		position: relative;
+		margin-left: 20px;
+		width: 	104px;
+		height: 126px;
+		color:blue;
+		background-image: url('img/stickyconiman.png');
+		background-repeat: no-repeat;
+		background-position: center 0;
+		/*background-position: cover;*/
+		
+	}
+
+ 	ul  li {
+ 		position: relative;
+ 		top: 30px;
+ 		right: 15px;
+ 		font-family: verdana, arial;
+ 		font-size: 15px;
+ 		text-align: center;
+ 		list-style-type: none;
+ 		color: #0900bb;
+		text-shadow: 1px 1px 0px #b2b2b2;
+
+	}
+	
+	#caja0{
+		position: relative;
+		top: -425px;
+		display: none;
+	}
+	#caja1{
+		position: relative;
+		top: -436px;
+		display: none;
+	}
+	#caja2{
+		position: relative;
+		top: -431px;
+		display: none;
+	}
+	#caja3{
+		position: relative;
+		top: -427px;
+		display: none;
+	}
+	#caja4{
+		position: relative;
+		top: -432px;
+		display: none;
+	}
+	#caja5{
+		position: relative;
+		top: -435px;
+		display: none;
+	}
+	#caja6{
+		position: relative;
+		top: -428px;
+		display: none;
+	}
+	#caja7{
+		position: relative;
+		top: -427px;
+		display: none;
+	}
+	#caja8{
+		position: relative;
+		top: -442px;
+		display: none;
+	}
+
+/*# Creo el boton para cerrar el llamado*/
+
+	#bot{
+		position: relative;
+ 		top: 33px;
+		background: url("img/tilde.png") no-repeat;
+		/*padding: 0px;*/
+	 	width: 20px;
+		height: 20px;
+	}
+
+	

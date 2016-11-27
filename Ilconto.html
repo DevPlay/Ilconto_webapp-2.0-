@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>IlConto</title>
+		<!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>	
+		<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>-->
+		<script src="config.js"></script>
+		<script src="funciones.js"></script>
+		<script type="text/javascript">
+		
+		var letra = 'caja';
+		var i = 0;
+
+		function presion() {
+			for (i; i < 100; i++) {
+			letra = 'caja'+i
+			document.getElementById(letra).style.display='inline-block';
+			letra = 'caja'+i
+			i += 1
+			break;
+			}
+		}
+
+		function ocultar() {
+	
+			document.getElementById(letra).style.display='none';
+							
+			}
+		</script>
+	
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen"/>
+</head>
+	<body >		
+
+	<!-- Creo clase separadores para el titulo de webapp-->
+
+		<hr size="5px" color="#00a65e">
+		<hr size="10px" color="#00a65e">
+		<hr size="15px" color="#00a65e">
+
+	<!-- Creo clase encabezado para poner manejar el titulo de webapp-->
+		
+		<div class="encabezado"><img id="img" src="img/Ilconto_mng.png"><h2 style="text-align:right">Sistema de gestión de locales</h2> </div>
+
+	<!-- Creo clase pared para poner imagen de fondo-->
+		
+		<div class="pared"><img id="img" src="img/acero6.jpg"></div>	
+
+
+	<!--Agrego los datos del dia y la hora-->	
+
+		<div class="fecha">
+		
+		<script type="text/javascript">
+		var date = new Date();
+		var d  = date.getDate();
+		var day = (d < 10) ? '0' + d : d;
+		var m = date.getMonth() + 1;
+		var month = (m < 10) ? '0' + m : m;
+		var yy = date.getYear();
+		var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(day + " " + month + " " + (year-2000));
+		</script>
+
+		<!--<hr size="1px" color="#00a65e">-->
+
+		<script type="text/javascript">
+		function startTime(){
+		today=new Date();
+		h=today.getHours();
+		m=today.getMinutes();
+		//s=today.getSeconds();
+		m=checkTime(m);
+		//s=checkTime(s);
+			document.getElementById('reloj').innerHTML=h+":"+m;
+		t=setTimeout('startTime()',500);}
+		function checkTime(i)
+			{if (i<10) {i="0" + i;}return i;}
+				window.onload=function(){startTime();}
+		</script>
+
+
+		<div id="reloj" style="font-size:20px;"></div>
+
+		</div>
+	
+
+	<!-- Creo clase box para las llamadas de las mesas-->
+		
+ 		<div class='box' id='caja0'>
+			<ul>
+			<li text-align:center>Llamada</br>de</br>mesa 1</li>
+			<button id="bot" onclick="ocultar()" src="tilde.png"></button>
+			</ul>
+		</div>
+
+		<div class='box' id='caja1'>
+			<ul>
+			<li>Llamada</br>de</br>mesa 2</li>
+			<button id="bot" onclick="ocultar()" src="tilde.png"></button>
+			</ul>
+		</div>
+
+		<div class='box' id='caja2'>
+			<ul>
+			<li>Llamada</br>de</br>mesa 3</li>
+			<button id="bot" onclick="ocultar()" src="img/tilde.png"></button>
+			</ul>
+		</div>
+
+		<div class='box' id='caja3'>
+			<ul>
+			<li>Llamada</br>de</br>mesa 4</li>
+			<button id="bot" onclick="ocultar()" src="img/tilde.png"></button>
+			</ul>
+		</div>
+
+		<div class='box' id='caja4'>
+			<ul>
+			<li>Llamada</br>de</br>mesa 5</li>
+			<button id="bot" onclick="ocultar()" src="img/tilde.png"></button>
+			</ul>
+		</div>
+
+		<div class='box' id='caja5'>
+			<ul>
+			<li>Llamada</br>de</br>mesa 6</li>
+			<button id="bot" onclick="ocultar()" src="img/tilde.png"></button>
+			</ul>
+		</div>
+
+		<div class='box' id='caja6'>
+			<ul>
+			<li>Llamada</br>de</br>mesa 7</li>
+			<button id="bot" onclick="ocultar()" src="img/tilde.png"></button>
+			</ul>
+		</div>
+
+		<div class='box' id='caja7'>
+			<ul>
+			<li>Llamada</br>de</br>mesa 8</li>
+			<button id="bot" onclick="ocultar()" src="img/tilde.png"></button>
+			</ul>
+		</div>
+			
+
+		<div class='box' id='caja8'>
+			<ul>
+			<li>Llamada</br>de</br>mesa 9</li>
+			<button id="bot" onclick="ocultar()" src="img/tilde.png"></button>
+			</ul>
+		</div>
+
+	<!-- Creo boton para activar las llamadas-->
+
+		<button id="presionar" onclick="presion()"></button>
+
+	<!-- Creo pie de pagina-->	
+
+		<!--<div clas="abajo">
+		</div>-->	
+
+		<h3>"2016, Buenos Aires. Argentina - Designed by Excelsior-Inc."</h3>
+
+	
+		 	</body>
+
+
+
+
+
+</html> 
+
+	 
